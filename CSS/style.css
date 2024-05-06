@@ -1,0 +1,24 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+:root {
+    --primary:  ;
+    --secondary:  ;
+    --alternative: ;
+    --bgHeaderFooter:  ;
+    --awesome: ;
+    --bgCaAbout: ; 
+    --mainBox-shadow: ; 
+    --card-box-shadow:;
+    --text-shadow: ;
+    --mainBg: ;
+    --bgImg: ;
+}
