@@ -10,9 +10,9 @@
     display: none;
 }
 :root {
-    --primary:  ;
-    --secondary:  ;
-    --alternative: ;
+    --primary: rgba(232,128,127, 0.3)  ;
+    --secondary: black  ;
+    --alternative:linear-gradient(--bottom-right, rgba(221,17,170,1), rgba(119,9,92,0.9) ) ;
     --bgHeaderFooter:linear-gradient(to right,rgba(252,250,241,1),rgba(157,108,108,1), rgba(221,17,170,1),rgba(232,128,127,1),rgba(225,90,158,1))  ;
     --awesome: ;
     --bgCaAbout: ; 
@@ -45,6 +45,7 @@
     inherits: false ; 
     initial-value: 0% ;
 }
+
 /* Navbar */
 .navbar{
     padding: 0;
@@ -54,6 +55,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      
 }
 
 :is(.container-fluid , .dropdown-menu){
@@ -65,20 +67,23 @@ img[alt='profile'] /* Attribute Selector [] */ {
     aspect-ratio: 1/1; 
     object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
     object-position: center; /* To place the image */
-    border-radius: 50%;
+   
 }
 
 img[alt='logo'] /* Attribute Selector [] */ {
-    width/*Property*/: 3rem;
+    width/*Property*/: 6rem;
     aspect-ratio: 1/1; 
     object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
     object-position: center; /* To place the image */
+
 }
 
 body{
         font-family: "Italianno", cursive;
         font-weight: 400;
-        font-style: normal;     
+        font-style: normal; 
+        min-width: 100vw;
+        overflow-x: hidden;    
 }
 /* Grid Layout */ /* vh dvh */
 :is(body) {
@@ -95,4 +100,50 @@ h1{
 }
 .lead{
     font-size: 3.5rem;
+}
+.homeText{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@media (width < 769px){
+    .homeText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.aboutColor{
+    background-color: var(--primary) ;
+}
+.display-2{
+ font-size: 6rem;
+}
+.AboutText{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+ font-size : 2rem ;
+}
+.full-height{
+    min-height: 100vh;
+    height: auto;
+}
+.ResumeText{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+ font-size : 2rem ;
+}
+.resumeColor{
+    background-image: var(--alternative) ;
 }
