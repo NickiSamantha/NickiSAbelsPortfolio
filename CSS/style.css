@@ -10,7 +10,7 @@
     display: none;
 }
 :root {
-    --primary: rgba(232,128,127, 0.3)  ;
+    --primary: rgba(232,128,127, 1)  ;
     --secondary: black  ;
     --alternative:linear-gradient(--bottom-right, rgba(221,17,170,1), rgba(119,9,92,0.9) ) ;
     --bgHeaderFooter:linear-gradient(to right,rgba(252,250,241,1),rgba(157,108,108,1), rgba(221,17,170,1),rgba(232,128,127,1),rgba(225,90,158,1))  ;
@@ -51,7 +51,6 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -83,7 +82,11 @@ body{
         font-weight: 400;
         font-style: normal; 
         min-width: 100vw;
-        overflow-x: hidden;    
+        overflow-x: hidden;  
+        display: flex;
+        justify-content: center;
+        /* background-color: gray; */
+          
 }
 /* Grid Layout */ /* vh dvh */
 :is(body) {
@@ -122,28 +125,31 @@ h1{
 .display-2{
  font-size: 6rem;
 }
-.AboutText{
+.text{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
  font-size : 2rem ;
 }
 .full-height{
+    min-width: 100vw;
     min-height: 100vh;
     height: auto;
 }
-.ResumeText{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
- font-size : 2rem ;
-}
 .resumeColor{
     background-image: var(--alternative) ;
+}
+.download{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.tableText{
+    font-family: "Italianno", cursive; 
+}
+.table{
+    width: 10rem;
+}
+.tableColor{
+    background-color: #ffe4d6;
 }
