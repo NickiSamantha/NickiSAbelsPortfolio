@@ -13,7 +13,7 @@
     --primary:  ;
     --secondary:  ;
     --alternative: ;
-    --bgHeaderFooter:  ;
+    --bgHeaderFooter:linear-gradient(to right,rgba(252,250,241,1),rgba(157,108,108,1), rgba(221,17,170,1),rgba(232,128,127,1),rgba(225,90,158,1))  ;
     --awesome: ;
     --bgCaAbout: ; 
     --mainBox-shadow: ; 
@@ -21,4 +21,78 @@
     --text-shadow: ;
     --mainBg: ;
     --bgImg: ;
+}
+@property --top-left {
+    syntax:"<percentage>" ;
+    inherits: false ;
+    initial-value: 50% ;
+}
+
+@property --top-right{
+    syntax: "<Percentage>" ;
+    inherits: false ; 
+    initial-value: 50%;
+}
+
+@property --bottom-left{
+    syntax: "<percentage>" ;
+    inherits: false;
+    initial-value: 0% ;
+}
+
+@property --bottom-right {
+    syntax: "<percentage>";
+    inherits: false ; 
+    initial-value: 0% ;
+}
+/* Navbar */
+.navbar{
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+:is(.container-fluid , .dropdown-menu){
+    background-image: var(--bgHeaderFooter);
+}
+
+img[alt='profile'] /* Attribute Selector [] */ {
+    width/*Property*/: 25rem;
+    aspect-ratio: 1/1; 
+    object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
+    object-position: center; /* To place the image */
+    border-radius: 50%;
+}
+
+img[alt='logo'] /* Attribute Selector [] */ {
+    width/*Property*/: 3rem;
+    aspect-ratio: 1/1; 
+    object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
+    object-position: center; /* To place the image */
+}
+
+body{
+        font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;     
+}
+/* Grid Layout */ /* vh dvh */
+:is(body) {
+    display: grid;
+    text-align: center;
+}
+/*Create three rows*/
+:is(body) {
+    grid-template-rows: auto 
+    minmax(100%,100dvh) auto;
+}
+h1{
+    font-size: 7rem;  
+}
+.lead{
+    font-size: 3.5rem;
 }
