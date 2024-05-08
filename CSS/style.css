@@ -224,3 +224,19 @@ h1{
       .hobby-card h3 {
         color: rgb(241, 191, 211);
       }
+
+      /*Testimonial Style*/
+
+      .carousel-item {
+        height: 18.75rem;
+      }
+      
+      .carousel-caption {
+        background-color:linear-gradient(left, #9d6c6c, #372626);
+        color: ;
+        padding: 20px;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        justify-content: center;
+      }
+  
