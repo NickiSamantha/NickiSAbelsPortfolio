@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *,
 *::after
 *::before {
@@ -13,13 +14,7 @@
     --secondary: black  ;
     --alternative:linear-gradient(--bottom-right, rgba(221,17,170,1), rgba(119,9,92,0.9) ) ;
     --bgHeaderFooter:linear-gradient(to right,rgba(252,250,241,1),rgba(157,108,108,1), rgba(221,17,170,1),rgba(232,128,127,1),rgba(225,90,158,1))  ;
-    --awesome: ;
-    --bgCaAbout: ; 
-    --mainBox-shadow: ; 
-    --card-box-shadow:;
-    --text-shadow: ;
-    --mainBg: ;
-    --bgImg: ;
+
 }
 @property --top-left {
     syntax:"<percentage>" ;
@@ -111,14 +106,7 @@ h1{
     justify-content: center;
 }
 
-@media (width < 769px){
-    .homeText{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
+
 #about{
     width: 100vw;
 }
@@ -158,7 +146,7 @@ h1{
       top: 0;
       bottom: 0;
       width: 0.125rem;
-      background: #9d6c6c
+      background: #9d6c6c;
       left: 50%;
       margin-left: -0.063rem;
     }
@@ -227,16 +215,48 @@ h1{
 
       /*Testimonial Style*/
 
-      .carousel-item {
-        height: 18.75rem;
-      }
+     .carousel-item {
+        height: 30rem;
+     }
       
       .carousel-caption {
         background-color:linear-gradient(left, #9d6c6c, #372626);
-        color: ;
-        padding: 20px;
+        /* color: ; */
+        align-items: start;
         font-family: "Open Sans", sans-serif;
         text-align: center;
         justify-content: center;
       }
-  
+      
+      img[alt="slideImage"]{
+        width: 10rem;
+        aspect-ratio: 1/1;
+      }
+      .Image{
+        width: 20rem;
+      }
+     p[carousel-testimonial] {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        height: 8rem;
+        box-shadow: .2rem .2rem .5rem pink;
+        padding-inline: .2rem;
+     }
+      /*Project Style*/
+    .project-card {
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+      
+      .project-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      @media (width < 769px){
+        .homeText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
