@@ -3,7 +3,6 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +52,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
+      "width" 100;
       
 }
 
@@ -94,16 +93,17 @@ body{
     text-align: center;
 }
 /*Create three rows*/
-:is(body) {
+/* :is(body) {
     grid-template-rows: auto 
     minmax(100%,100dvh) auto;
-}
+} */
 h1{
     font-size: 7rem;  
 }
 .lead{
     font-size: 3.5rem;
 }
+
 .homeText{
     display: flex;
     flex-direction: column;
@@ -118,6 +118,9 @@ h1{
         align-items: center;
         justify-content: center;
     }
+}
+#about{
+    width: 100vw;
 }
 .aboutColor{
     background-color: var(--primary) ;
@@ -138,18 +141,86 @@ h1{
     min-height: 100vh;
     height: auto;
 }
+/*RESUME STYLE*/
 .resumeColor{
-    background-image: var(--alternative) ;
+    background-image: linear-gradient(rgba(221,17,170,1), rgba(119,9,92,1));
 }
-.download{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-.tableText{
-    font-family: "Italianno", cursive; 
-}
-.table{
-    width: 10rem;
-}
-.tableColor{
-    background-color: #ffe4d6;
-}
+    .timeline {
+      position: relative;
+      padding: 0;
+      list-style: none;
+      font-family: "Open Sans", sans-serif;
+    }
+    
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0.125rem;
+      background: #9d6c6c
+      left: 50%;
+      margin-left: -0.063rem;
+    }
+    
+    .timeline-item {
+      margin-bottom: 50px;
+      position: relative;
+    }
+    
+    .timeline-item:before,
+    .timeline-item:after {
+      content: "";
+      display: table;
+    }
+    
+    .timeline-item:after {
+      clear: both;
+    }
+    
+    .timeline-item .timeline-content {
+      background: #ffe4d6;
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.313rem rgba(0,0,0,0.1);
+    }
+    
+    .timeline-item .timeline-content h2 {
+      margin-top: 0;
+    }
+    
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Open Sans", sans-serif;
+    }
+    
+    .skills-table th, 
+    .skills-table td {
+      border: 0.063rem solid #E8807F;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    
+    .skills-table th {
+      background-color: #E8807F;
+      color: #fff;
+    }
+    
+    .skills-table tbody tr:nth-child(even) {
+      background-color: #E8807F;
+    }
+    .hobby-card {
+        background-color: #DF5A9E;
+        border: 0.063rem solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 0 0.313rem rgba(252,250,241,1);
+        font-family: "Open Sans", sans-serif;
+        justify-content: center;
+        
+      }
+      .hobby-card h3 {
+        color: rgb(241, 191, 211);
+      }
