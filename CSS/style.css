@@ -64,6 +64,7 @@ img[alt='profile'] /* Attribute Selector [] */ {
 }
 
 img[alt='logo'] /* Attribute Selector [] */ {
+    margin-left:40px;
     width/*Property*/: 6rem;
     aspect-ratio: 1/1; 
     object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
@@ -129,6 +130,10 @@ h1{
     min-height: 100vh;
     height: auto;
 }
+.text-center{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 /*RESUME STYLE*/
 h3{
     font-size: 6rem;
@@ -141,12 +146,14 @@ h3{
 }
 .resumeColor{
     background-image: linear-gradient(rgba(221,17,170,1), rgba(119,9,92,1));
+    
 }
     .timeline {
       position: relative;
-      padding: 0;
+      padding: 3rem;
       list-style: none;
       font-family: "Open Sans", sans-serif;
+      
     }
     
     .timeline:before {
@@ -187,16 +194,23 @@ h3{
     }
     
     .skills-table {
+    
       width: 100%;
       border-collapse: collapse;
       font-family: "Open Sans", sans-serif;
     }
     
+    .MSkills {
+
+ margin:auto;
+
+    }
     .skills-table th, 
     .skills-table td {
       border: 0.063rem solid #E8807F;
       padding: 0.5rem;
       text-align: left;
+      
     }
     
     .skills-table th {
@@ -242,6 +256,10 @@ h3{
         aspect-ratio: 1/1;
         
       }
+      / .testimonialAlign{
+        margin-left: 2rem;
+        margin-right: 2rem;
+      } */
       .Image{
         width: 20rem;
       }
@@ -271,6 +289,11 @@ h3{
         height: 200px;
         object-fit: cover;
       }
+      .projectAlign{
+        margin-left: 2rem;
+    margin-right: 2rem;
+    background-image: linear-gradient(to top,#df5a9e,#dea6cf);
+      }
       /*Reach Me*/
       body {
         background-color: #d988b9;
@@ -289,7 +312,8 @@ h3{
       }
      .formBlock{
         background-image: linear-gradient(#df5adf,#fcfaf1);
-        width: ;
+        margin-left: 2rem;
+        margin-right: 2rem;
      }
      .contact-card {
         max-width: 25rem;
@@ -331,7 +355,7 @@ h3{
       .footer p {
         margin-bottom: 0;
       }
-      @media (width < 769px){
+      @media (width < 720px){
         .homeText{
             display: flex;
             flex-direction: column;
@@ -339,3 +363,40 @@ h3{
             justify-content: center;
         }
     }
+    @media only screen and (max-width:720px) {
+
+#About p {
+width:50%;
+
+}
+#Home img {
+width:14rem;
+position:relative;
+left:37px;
+}
+.homeText h1 {
+    width:50%;
+}
+img[alt='logo'] /* Attribute Selector [] */ {
+    margin-left:79px;
+    width/*Property*/: 6rem;
+    aspect-ratio: 1/1; 
+    object-fit: cover; /*Image to fit in the object element , you can use contain as a value as well*/
+    object-position: center; /* To place the image */
+}
+body {
+margin-left:40px;
+}
+.MSkills {
+    Width:80%;
+}
+
+.navbar {
+    position:-webkit-sticky;
+    position: sticky;
+    top:0;
+}
+}
+
+
+    
