@@ -227,7 +227,7 @@ h3{
      .carousel-item {
         height: 30rem;
      }
-      
+     
       .carousel-caption {
         background-color:linear-gradient(left, #9d6c6c, #372626);
         /* color: ; */
@@ -240,6 +240,7 @@ h3{
       img[alt="slideImage"]{
         width: 10rem;
         aspect-ratio: 1/1;
+        
       }
       .Image{
         width: 20rem;
@@ -248,8 +249,17 @@ h3{
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
         height: 8rem;
-        box-shadow: .2rem .2rem .5rem pink;
+        /*box-shadow: .2rem .2rem .5rem pink;*/
         padding-inline: .2rem;
+     }
+     .card-body{
+        height: 15rem;
+        width: auto;
+        background-color:#E8807F;
+     }
+     .card{
+        background-color:#fcfaf1;
+        font-family: "Open Sans", sans-serif;
      }
       /*Project Style*/
     .project-card {
@@ -263,21 +273,64 @@ h3{
       }
       /*Reach Me*/
       body {
-        background-color: #f8f9fa;
+        background-color: #d988b9;
+      }
+      .form-group{
+        font-family: "Open Sans", sans-serif;
       }
       
       .contact-form {
-        max-width: 500px;
-        margin: 50px auto;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(244, 218, 218, 0.1);
+        max-width: 31.25rem;
+        margin: 3.125rem auto;
+        background-color:#d988b9;
+        padding: 1.875rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.625 rgba(244, 218, 218, 0.1);
       }
      .formBlock{
         background-image: linear-gradient(#df5adf,#fcfaf1);
         width: ;
      }
+     .contact-card {
+        max-width: 25rem;
+        margin: 3.125rem auto;
+        background-color: #d988b9;
+        padding: 1.875rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.625rem rgba(0,0,0,0.1);
+        font-family: "Open Sans", sans-serif;
+      }
+      .btn{
+        font-family: "Open Sans", sans-serif;
+      }
+      /*
+      .contact-card h4 {
+        margin-bottom: 1.25rem;
+      }
+      
+      .contact-card p {
+        margin-bottom: 0.625rem;
+      }*/
+      
+      .social-icons {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .social-icons li {
+        display: inline-block;
+        margin-right: 0.625;
+      }
+      /*Footer*/
+      .footer {
+        background-image: var(--bgHeaderFooter);
+        color: #fff;
+        padding: 1.25rem 0;
+      }
+      
+      .footer p {
+        margin-bottom: 0;
+      }
       @media (width < 769px){
         .homeText{
             display: flex;
