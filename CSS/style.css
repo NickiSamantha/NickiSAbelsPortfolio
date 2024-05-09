@@ -398,5 +398,47 @@ margin-left:40px;
 }
 }
 
+.flip-card {
+    perspective: 1000px;
+    height:15rem;
+        background-color: #DF5A9E;
+        border: 0.063rem solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 0 0.313rem rgba(252,250,241,1);
+        font-family: "Open Sans", sans-serif;
+        justify-content: center;
+        color: rgb(241, 191, 211);
+    
+  }
 
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #e081b2;
+    color: rgb(241, 191, 211);
+  }
+
+  .flip-card-back {
+    background-color: #bb3f7f;
+    color: black;
+    transform: rotateY(180deg);
+  }
     
