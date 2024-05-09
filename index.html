@@ -39,23 +39,23 @@
                 <a class="nav-link" href="#About">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#Resume" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Resume
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Education</a></li>
-                  <li><a class="dropdown-item" href="#">Work Experience</a></li>
-                  <li><a class="dropdown-item" href="#">Skills</a></li>
-                  <li><a class="dropdown-item" href="#">Hobbies</a></li>
+                  <li><a class="dropdown-item" href="#Education">Education</a></li>
+                  <li><a class="dropdown-item" href="#Work Experience">Work Experience</a></li>
+                  <li><a class="dropdown-item" href="#Skills">Skills</a></li>
+                  <li><a class="dropdown-item" href="#Hobbies">Hobbies</a></li>
                 </ul>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" href="#Testimonials">Testimonials</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#Projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Reach Me</a>
+                    <a class="nav-link" href="#Reach Me">Reach Me</a>
                   </li>
               </li>
             </ul>
@@ -97,10 +97,10 @@
     </section>
 
     <section class="resumeColor full-height bg d-flex flex-column" id="Resume">
-      <h2>Resume</h2>
+      <h2 class="resumeText">Resume</h2>
       <div class="row">
       <div class="col-lg-6 d-flex flex-column">
-      <h3>Education</h3>
+      <h3 id="Education">Education</h3>
         <div class="container mt-5">
   <ul class="timeline">
     <li class="timeline-item">
@@ -131,7 +131,7 @@
 </div>
 </div>
   <div class="col-lg-6">
-    <h3>Work Experience</h3>
+    <h3 id="Work Experience">Work Experience</h3>
     <div class="container mt-5">
       <ul class="timeline">
         <li class="timeline-item">
@@ -164,7 +164,7 @@
       </div>
     </div>
     <div class="row">
-      <h3>Skills</h3>
+      <h3 id="Skills">Skills</h3>
       <div class="col-lg-6">
         <div class="mt-5">
           <table class="table skills-table">
@@ -227,24 +227,24 @@
     </div>
     
     <div class="col-12">
-      <h3>Hobbies</h3>
+      <h3 id="Hobbies">Hobbies</h3>
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-4">
             <div class="hobby-card">
-              <h3>Reading</h3>
+              <h4>Reading</h4>
               <p>My favourite genre is Romance , Philosiphy and Spiritual. </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="hobby-card">
-              <h3>Designing</h3>
+              <h4>Designing</h4>
               <p>I design custom garments for kids and adults.</p>
             </div>
           </div>
           <div class="col-md-4 m-auto">
             <div class="hobby-card">
-              <h3>Creating Templates</h3>
+              <h4>Creating Templates</h4>
               <p>I create templates for printing using signmaster and photoshop</p>
             </div>
           </div>
@@ -259,7 +259,7 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-6">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide w-100">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -427,6 +427,28 @@
  </section>
 
  <section class="full-height" id="Reach Me">
+  <div class="container formBlock">
+    <h2 class="reachText">Reach Me</h2>
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="clear" class="btn btn-primary">Clear</button>
+      </form>
+    </div>
+  </div>
+  
 
  </section>
 

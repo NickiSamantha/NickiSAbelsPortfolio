@@ -130,6 +130,15 @@ h1{
     height: auto;
 }
 /*RESUME STYLE*/
+h3{
+    font-size: 6rem;
+}
+.resumeText{
+    font-size : 6rem;
+}
+.reachText{
+    font-size: 6rem;
+}
 .resumeColor{
     background-image: linear-gradient(rgba(221,17,170,1), rgba(119,9,92,1));
 }
@@ -252,6 +261,23 @@ h1{
         height: 200px;
         object-fit: cover;
       }
+      /*Reach Me*/
+      body {
+        background-color: #f8f9fa;
+      }
+      
+      .contact-form {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(244, 218, 218, 0.1);
+      }
+     .formBlock{
+        background-image: linear-gradient(#df5adf,#fcfaf1);
+        width: ;
+     }
       @media (width < 769px){
         .homeText{
             display: flex;
