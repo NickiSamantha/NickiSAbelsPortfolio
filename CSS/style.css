@@ -525,7 +525,7 @@ body {
 
     /* Additional adjustments */
     .carousel-caption {
-        top: 50%;
+        top: 30%;
         /* Centering carousel caption */
         transform: translateY(-50%);
     }
